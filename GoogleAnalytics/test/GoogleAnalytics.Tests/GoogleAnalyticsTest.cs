@@ -30,7 +30,7 @@ public class GoogleAnalyticsTest
             } 
         };
 
-        await googleAnalytics.SendToGA(eventPayload, context);
+        await googleAnalytics.SendEvent(eventPayload, context);
 
         Assert.Equal("Done", "Done");
     }
